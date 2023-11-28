@@ -1,0 +1,8 @@
+name: libstoragemgmt
+on: push
+jobs:
+  build_pkg:
+    uses: gardenlinux/package-build/.github/workflows/build_pkg.yml@main
+    with:
+      source: git+https://github.com/libstorage/libstoragemgmt
+      debian_source: native
